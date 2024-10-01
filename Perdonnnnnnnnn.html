@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="Perrolindo.jpg" alt="">
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espero que te guste❤️❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        #container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #no {
+            background-color: #ff6666;
+            color: white;
+        }
+        #si {
+            background-color: #66cc66;
+            color: white;
+        }
+        #no:hover {
+            background-color: #ff4d4d;
+        }
+        #si:hover {
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Perdón Genesis, pero ve ni tu ex te hace esta cosa</h1>
+        <img src="perrolindo.jpg" alt="perrolindo">
+        <button id="si">Sí</button>
+        <button id="no">No</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        const btnNo = document.getElementById('no');
+        const btnSi = document.getElementById('si');
+        const message = document.getElementById('message');
+
+        btnNo.addEventListener('mouseover', function() {
+            // Mover el botón "No" a una nueva posición aleatoria
+            const x = Math.random() * 300 - 150; // Rango para que se mueva a ambos lados
+            const y = Math.random() * 300 - 150; // Rango para que se mueva hacia arriba y abajo
+            btnNo.style.transform = `translate(${x}px, ${y}px)`;
+        });
+
+        btnSi.addEventListener('click', function() {
+            // Mostrar el mensaje con la imagen al hacer clic en "Sí"
+            message.textContent = "𝓛𝓪 𝓿𝓲𝓭𝓪 𝓮𝓼 𝓶𝓮𝓳𝓸𝓻 𝓼𝓲 𝓮𝓻𝓮𝓼 𝓯𝓮𝓵𝓲𝔃 𝓪𝓼í 𝓺𝓾𝓮 𝓼𝓸𝓷𝓻í𝓮 𝔂 𝓭𝓲𝓼𝓯𝓻𝓾𝓽𝓪 𝓭𝓮 𝓽𝓾 𝓿𝓲𝓭𝓪 𝓯𝓵𝓪𝓬𝓪❤️❤️";
+        }); 
+</script>
+</body>
+</html>
